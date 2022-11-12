@@ -1,4 +1,3 @@
-// Declaring the variables
 let lon;
 let lat;
 let temperature = document.querySelector(".temp");
@@ -22,7 +21,7 @@ if (navigator.geolocation) {
 `http://api.openweathermap.org/data/2.5/weather?lat=${lat}&` +
 `lon=${lon}&appid=6d055e39ee237af35ca066f35474e9df`;
 
-	// Calling the API
+	// API Call
 	fetch(base)
 		.then((response) => {
 		return response.json();
